@@ -1,0 +1,348 @@
+#header-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(65, 65, 65, .1) 50%, rgba(0, 91, 158, .6)), url(../img/header.jpg);
+    background-attachment: fixed;
+    display: table;
+}
+
+#header-section .overlay {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbar {
+    border-bottom: #1886C7 2px solid;
+    background-color: rgba(0, 0, 0, 1) !important;
+    opacity: 0.8;
+
+}
+
+.navbar .navbar-brand {
+    color: #1886C7 !important;
+    font-size: 1.7em
+}
+
+.navbar a {
+    font-size: 1.2em;
+}
+
+.navbar li {
+    position: relative;
+    overflow: hidden;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+.navbar li::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    border-radius: 50% 50% 0 0;
+    background-color: #1886C7;
+    bottom: 0;
+    z-index: -1;
+    transition: .7s;
+}
+
+.navbar li:hover::before {
+    height: 180%;
+}
+
+.navbar li:hover a {
+    color: white !important;
+}
+
+#features-section {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.feature-top i {
+    font-size: 3em;
+    margin-bottom: 8px;
+    transition: 0.4s;
+}
+
+.feature-bot {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+.feauture {
+    padding: 20px;
+
+}
+
+.feauture:hover .feature-top {
+    color: #1886C7 !important;
+}
+
+.our-history h2 {
+    border-left: 6px solid #1886C7;
+    padding-left: 25px;
+    color: #1886c7
+}
+
+.our-history p {
+    font-size: 0.9em;
+    line-height: 24px
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#team-section {
+    margin-top: 100px;
+}
+
+.card,
+.card-header,
+.card-footer {
+    border: none;
+    background-color: white;
+}
+
+.card {
+    margin-bottom: 40px;
+    opacity: 0.6;
+}
+
+.card-img-frame {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: 0.5s;
+    border-radius: 100%;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.15);
+}
+
+.card h3 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #1886c7;
+}
+
+.card p {
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+.card-body {
+    padding-bottom: 0px;
+}
+
+.card h5 {
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-footer i {
+    font-size: 1.4em;
+    color: #1886c7;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card-footer i:hover {
+    color: darkblue;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+#model-section {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#model-section h2 {
+    letter-spacing: 8px;
+    font-weight: 300;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #1886c7
+}
+
+#model-section p {
+    color: lightgray;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+#model-section .row {}
+
+#model-section .overlay {
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.play {
+    font-size: 4em;
+    color: #1886c7;
+    cursor: pointer;
+}
+#what-section{
+    padding: 120px 0px;
+    background-color: ghostwhite;
+}
+.what-content i{
+    font-size: 3em;
+    color: #1886C7;
+}
+.what-content h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size:1.7em;
+    margin:40px 0;
+    font-weight: 400;
+    color:  #1886C7
+}
+.what-content p{
+    line-height: 1.9em;
+
+}
+.what-content{
+    background-color: white;
+    padding: 40px 45px;
+    margin-right: -30px;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    box-shadow: -3px 3px 5px 0.5px lightgray;
+}
+
+.what-img img{
+    margin-left: -30px;
+}
+#portfolio-section img{
+    width: 100%;
+}
+#portfolio-section .img-frame{
+    position: relative;
+    overflow:hidden;
+    background-color: rgba(0,0,0,0.2);
+}
+#portfolio-section .img-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(24, 134, 199, 0.7);
+    overflow: hidden;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+}
+#portfolio-section .img-frame:hover .img-overlay{
+    width: 150%;
+    height: 150%;
+    overflow: visible;
+}
+.img-frame .img-overlay i{
+    font-size: 1.5em;
+}
+.img-frame .img-overlay h5{
+    font-size: 1.5em;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.img-frame .img-overlay p{
+    font-style: italic;
+    color: whitesmoke;
+}
+.img-frame img{
+    position: relative;
+    z-index: -1
+}
+#carousel-section{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)),url("../img/carosel4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-caption p{
+    color: lightgray;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+}
+#carousel-section img{
+    opacity: 0.8;
+    transform: scale(0.7)
+}
+.quote{
+    color:#1886C7
+}
+#form-section .form-text h4, .form-text h3{
+    letter-spacing: 3px;
+    font-weight: 350;
+    border-left: 5px solid #1886c7;
+    padding-left: 10px;
+}
+#form-section .form-text p{
+    color: gray
+}
+#form-section .social-group{
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.input-group-text{
+    background-color: #1886c7;
+    color: white;
+    width: 50px;
+    border-radius:0px !important;
+
+}
+input, textarea{
+    font-size: 1em !important;
+    font-weight:400 !important; 
+}
+#form-section{
+    background-color: #f4f5f9;
+}
+#form-section .form-control, #form-section .btn{
+    border-radius: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media screen and ( max-width:768px ){
+    #header-section h1{
+        font-size: 3em;
+    }
+    #what-section .what-content, #what-section .what-img img{
+        margin: 0 auto;
+        display: block;
+    }
+    
+}
